@@ -6,7 +6,7 @@
 Random randomizer = new Random();
 int minRandomNumber = 1;
 int maxRandomNumber = 10;
-int sizeArray = 6;
+int sizeArray = 5;
 int[] numbers = new int[sizeArray];
 
 for(int i = 0; i < numbers.Length; i++)
@@ -21,10 +21,11 @@ for(int i = 0; i < numbers.Length; i++)
 Console.WriteLine();
 
 int sum = 0;
-for(int i = 1; i < numbers.Length; i+=2)
+for(int i = 0; i < numbers.Length; i++)
 {
-    sum = sum + numbers[i];
-
+    if(i % 2 != 0)
+    {
+        sum = sum + array[i];
+    }
 }
-
 Console.Write(sum + " ");
