@@ -14,12 +14,12 @@ int maxRandoNUmber = 10;
 //int result = 0;
 int[] resultArray;
 
- for(int i = 0; i < numbers.Length; i++)
- {
+for(int i = 0; i < numbers.Length; i++)
+{
     numbers[i] = randomizer.Next(minRanomNumber, maxRandoNUmber +1);
     Console.Write(numbers[i] + ",");
     
- }
+}
 Console.WriteLine();
 if(numbers.Length % 2 == 0)
 {
